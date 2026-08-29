@@ -10,9 +10,9 @@
 >
 > AIでリサーチの深度と効率を再定義する。
 
-**AI Berkshire** は、Claude CodeおよびCodexに対応した投資リサーチSkillのコレクションです。バフェット・マンガー・段永平（ダン・ヨンピン）・李録（リ・ルー）という4人のバリュー投資の巨人の方法論を体系化し、AIエージェントによりプロフェッショナル水準のリサーチを提供します。
+**AI Berkshire** は、Antigravity CLIに対応した投資リサーチSkillのコレクションです。バフェット・マンガー・段永平（ダン・ヨンピン）・李録（リ・ルー）という4人のバリュー投資の巨人の方法論を体系化し、AIエージェントによりプロフェッショナル水準のリサーチを提供します。
 
-1人 + Claude Code / Codex = 投資リサーチチーム丸ごと。
+1人 + Antigravity CLI = 投資リサーチチーム丸ごと。
 
 [実績](#実績) · [なぜAIに直接聞いてはいけないのか](#なぜaiに直接聞いてはいけないのか) · [Skill一覧](#skill一覧20スキル) · [クイックスタート](#クイックスタート) · [レポート](#実際のリサーチレポート) · [設計思想](#設計思想)
 
@@ -52,7 +52,7 @@
 
 ## なぜAIに直接聞いてはいけないのか？
 
-「拼多多（ピンドゥオドゥオ）は買いですか？」とClaudeに聞くことはできます。すると「一方では...他方では...」とバランスの取れた分析が返ってきて、「投資にはリスクが伴います、ご自身の判断でご検討ください」と締め括られます。
+「拼多多（ピンドゥオドゥオ）は買いですか？」とAIに聞くことはできます。すると「一方では...他方では...」とバランスの取れた分析が返ってきて、「投資にはリスクが伴います、ご自身の判断でご検討ください」と締め括られます。
 
 **そういう分析は正しそうに見えても、実際の意思決定には使えません。**
 
@@ -170,46 +170,46 @@ AIに直接聞けばコンテキストウィンドウは1つです。4つの並�
 
 | Skill | 目的 | 使用場面 |
 |-------|------|---------|
-| [`/investment-research`](skills/investment-research.md) | 四巨人総合分析 | 上場企業の全方位リサーチ |
-| [`/investment-team`](skills/investment-team.md) | マルチエージェント並列リサーチチーム | 4エージェント並列——最速かつ最も網羅的 |
-| [`/management-deep-dive`](skills/management-deep-dive.md) | 経営陣の深掘り | 「株を買うことは人を買うこと」——経営陣が鍵となる変数のとき |
-| [`/private-company-research`](skills/private-company-research.md) | 非上場企業リサーチ | アントグループ、SpaceXのような情報の少ない非上場企業のリサーチ |
-| [`/deep-company-series`](skills/deep-company-series.md) | 8部構成の長編深掘りシリーズ | 発行品質のシリーズ、認知リセットから意思決定収束まで約12万字 |
+| [`/investment-research`](.agents/skills/investment-research/SKILL.md) | 四巨人総合分析 | 上場企業の全方位リサーチ |
+| [`/investment-team`](.agents/skills/investment-team/SKILL.md) | マルチエージェント並列リサーチチーム | 4エージェント並列——最速かつ最も網羅的 |
+| [`/management-deep-dive`](.agents/skills/management-deep-dive/SKILL.md) | 経営陣の深掘り | 「株を買うことは人を買うこと」——経営陣が鍵となる変数のとき |
+| [`/private-company-research`](.agents/skills/private-company-research/SKILL.md) | 非上場企業リサーチ | アントグループ、SpaceXのような情報の少ない非上場企業のリサーチ |
+| [`/deep-company-series`](.agents/skills/deep-company-series/SKILL.md) | 8部構成の長編深掘りシリーズ | 発行品質のシリーズ、認知リセットから意思決定収束まで約12万字 |
 
 ### 📊 決算分析
 
 | Skill | 目的 | 使用場面 |
 |-------|------|---------|
-| [`/earnings-review`](skills/earnings-review.md) | 決算の深読み（一次資料） | バフェットが有報を読むように——セルサイドレポートを読まずに生の開示書類のみを読む |
-| [`/earnings-team`](skills/earnings-team.md) | 決算チーム＋発行可能な記事 | 四巨人が並列で決算を解釈 → 編集仕上げ → 読者レビュー → 発行可能状態 |
+| [`/earnings-review`](.agents/skills/earnings-review/SKILL.md) | 決算の深読み（一次資料） | バフェットが有報を読むように——セルサイドレポートを読まずに生の開示書類のみを読む |
+| [`/earnings-team`](.agents/skills/earnings-team/SKILL.md) | 決算チーム＋発行可能な記事 | 四巨人が並列で決算を解釈 → 編集仕上げ → 読者レビュー → 発行可能状態 |
 
 ### 🏭 業界スクリーニング
 
 | Skill | 目的 | 使用場面 |
 |-------|------|---------|
-| [`/industry-research`](skills/industry-research.md) | 業界バリューチェーンスキャン | ある業界のバリューチェーン全体の投資機会をマッピング |
-| [`/industry-funnel`](skills/industry-funnel.md) | 業界ファネルスクリーニング | 全市場 → 粗選り≤10社 → 最終選定3社、深掘り分析付き |
-| [`/quality-screen`](skills/quality-screen.md) | クオリティスクリーン（7つの厳格指標） | 一流でない企業を素早く排除；個別銘柄 / 業界 / 指数 / テーマのバッチスクリーニングに対応 |
-| [`/bottleneck-hunter`](skills/bottleneck-hunter.md) | サプライチェーンボトルネックハンター | 大きなトレンドから物理的なサプライチェーンのボトルネックと裁定機会を探す |
-| [`/investment-checklist`](skills/investment-checklist.md) | バフェット購入前チェックリスト | 6つのゲート、10分で深掘りする価値があるかを判断 |
+| [`/industry-research`](.agents/skills/industry-research/SKILL.md) | 業界バリューチェーンスキャン | ある業界のバリューチェーン全体の投資機会をマッピング |
+| [`/industry-funnel`](.agents/skills/industry-funnel/SKILL.md) | 業界ファネルスクリーニング | 全市場 → 粗選り≤10社 → 最終選定3社、深掘り分析付き |
+| [`/quality-screen`](.agents/skills/quality-screen/SKILL.md) | クオリティスクリーン（7つの厳格指標） | 一流でない企業を素早く排除；個別銘柄 / 業界 / 指数 / テーマのバッチスクリーニングに対応 |
+| [`/bottleneck-hunter`](.agents/skills/bottleneck-hunter/SKILL.md) | サプライチェーンボトルネックハンター | 大きなトレンドから物理的なサプライチェーンのボトルネックと裁定機会を探す |
+| [`/investment-checklist`](.agents/skills/investment-checklist/SKILL.md) | バフェット購入前チェックリスト | 6つのゲート、10分で深掘りする価値があるかを判断 |
 
 ### 📈 ポートフォリオ管理
 
 | Skill | 目的 | 使用場面 |
 |-------|------|---------|
-| [`/income-investment`](skills/income-investment.md) | インカム中心の株式分析 | 持続的収益、機会的高利回り、利回りの罠を区別 |
-| [`/portfolio-review`](skills/portfolio-review.md) | ポートフォリオレビュー＆最適化 | 「企業をリサーチする」から「ポートフォリオを管理する」へ——ポジションサイジング、集中度、リバランス |
-| [`/thesis-tracker`](skills/thesis-tracker.md) | 投資テーゼトラッカー | 購入後の規律システム：投資テーゼが否定されていないかを継続的に追跡 |
-| [`/thesis-drift`](skills/thesis-drift.md) | 投資テーゼのドリフト検出 | 2つのテーゼ／レポートを比較し、事実の変化・バリュエーションの変化・表現の変化を区別 |
-| [`/news-pulse`](skills/news-pulse.md) | 株価変動の迅速な要因分析 | 株が急騰・急落したとき——10分で「何が起きたか」を解明 |
+| [`/income-investment`](.agents/skills/income-investment/SKILL.md) | インカム中心の株式分析 | 持続的収益、機会的高利回り、利回りの罠を区別 |
+| [`/portfolio-review`](.agents/skills/portfolio-review/SKILL.md) | ポートフォリオレビュー＆最適化 | 「企業をリサーチする」から「ポートフォリオを管理する」へ——ポジションサイジング、集中度、リバランス |
+| [`/thesis-tracker`](.agents/skills/thesis-tracker/SKILL.md) | 投資テーゼトラッカー | 購入後の規律システム：投資テーゼが否定されていないかを継続的に追跡 |
+| [`/thesis-drift`](.agents/skills/thesis-drift/SKILL.md) | 投資テーゼのドリフト検出 | 2つのテーゼ／レポートを比較し、事実の変化・バリュエーションの変化・表現の変化を区別 |
+| [`/news-pulse`](.agents/skills/news-pulse/SKILL.md) | 株価変動の迅速な要因分析 | 株が急騰・急落したとき——10分で「何が起きたか」を解明 |
 
 ### 🧠 思考ツール
 
 | Skill | 目的 | 使用場面 |
 |-------|------|---------|
-| [`/dyp-ask`](skills/dyp-ask.md) | 段永平Q&A | 段永平の思考方法で任意の問いを考える——ビジネス、投資、人生 |
-| [`/financial-data`](skills/financial-data.md) | 財務データの取得とクロスバリデーション | 重要データが2つ以上の独立したソースから得られることを保証；1%超の乖離をアラート |
-| [`/wechat-article`](skills/wechat-article.md) | WeChat記事ワークフロー | 著者・編集者・読者エージェントが協力して発行可能な記事を制作 |
+| [`/dyp-ask`](.agents/skills/dyp-ask/SKILL.md) | 段永平Q&A | 段永平の思考方法で任意の問いを考える——ビジネス、投資、人生 |
+| [`/financial-data`](.agents/skills/financial-data/SKILL.md) | 財務データの取得とクロスバリデーション | 重要データが2つ以上の独立したソースから得られることを保証；1%超の乖離をアラート |
+| [`/wechat-article`](.agents/skills/wechat-article/SKILL.md) | WeChat記事ワークフロー | 著者・編集者・読者エージェントが協力して発行可能な記事を制作 |
 
 ---
 
@@ -221,149 +221,51 @@ AIに直接聞けばコンテキストウィンドウは1つです。4つの並�
 
 重大な投資判断においては、メンテナーの見解として、通常は最も強力なモデルが最良の分析ROIをもたらします；モデルコストの節約が重要な判断品質を犠牲にすべきではありません。軽量モデルはトリアージ、要約、低リスクな質問には有用ですが、モート・バリュエーション・マネジメント・リスクの統合は、モデルの能力により強く依存すると考えるべきです。
 
-コストを抑えるには、深掘りリサーチをそのまま安くしようとする前にワークフローを調整してください：まず [`/quality-screen`](skills/quality-screen.md) で弱い企業を除外する、あるいは [`/news-pulse`](skills/news-pulse.md) で株価変動の迅速な要因分析を行う。結果が深掘りに値する場合にのみ [`/investment-research`](skills/investment-research.md) や [`/investment-team`](skills/investment-team.md) を実行してください。
+コストを抑えるには、深掘りリサーチをそのまま安くしようとする前にワークフローを調整してください：まず [`/quality-screen`](.agents/skills/quality-screen/SKILL.md) で弱い企業を除外する、あるいは [`/news-pulse`](.agents/skills/news-pulse/SKILL.md) で株価変動の迅速な要因分析を行う。結果が深掘りに値する場合にのみ [`/investment-research`](.agents/skills/investment-research/SKILL.md) や [`/investment-team`](.agents/skills/investment-team/SKILL.md) を実行してください。
 
-### 1. AIクライアントのインストール
+### Antigravity CLI でのクイックスタート
 
-このリポジトリは1つの標準ワークフローを維持し、Claude Codeコマンドと Codex skillの両方を提供します。使用するクライアントをインストールしてください。
-
-Claude Codeユーザーの場合：
+本プロジェクトは **Google Antigravity CLI (`agy`)** にネイティブ対応しています。21個の投資調査Skillが `.agents/skills/` に配置され、ワークスペースルールが `GEMINI.md` に定義されています。**手動インストールやコマンドのコピーは不要**です：
 
 ```bash
-npm install -g @anthropic-ai/claude-code
-```
-
-CodexユーザーでmacOS / Linuxの場合：
-
-```bash
-# macOS / Linux
-curl -fsSL https://chatgpt.com/codex/install.sh | sh
-
-# または npm を使用
-npm install -g @openai/codex
-
-# または Homebrew を使用
-brew install --cask codex
-
-# インストール確認
-codex --version
-```
-
-Windowsユーザーは公式PowerShellインストーラーを使用できます：`powershell -ExecutionPolicy ByPass -c "irm https://chatgpt.com/codex/install.ps1 | iex"`
-
-`codex --version` がバージョンを表示したら、このプロジェクトのCodex skillsのインストールに進めます。
-
-#### 承認プロンプトを減らす
-
-これらのSkillは多数のツール呼び出しを行い、Claude Codeはデフォルトでその都度承認を求めます。この挙動はClaude Codeのクライアント側の権限システムによるもので、本プロジェクトが変更できるリポジトリのデフォルト設定ではありません。
-
-現在のワークフローを信頼し、信頼できる環境で実行している場合は、権限スキップモードでClaude Codeを起動できます：
-
-```bash
-claude --dangerously-skip-permissions
-```
-
-警告：このモードはClaude Codeのツール承認ガードレールを無効化します。リポジトリ・コマンド・作業ディレクトリを信頼している場合にのみ使用してください。
-
-### 2. Skillのインストール
-
-Claude CodeユーザーでmacOS / Linuxの場合：
-
-```bash
-# リポジトリをクローン
-git clone https://github.com/xbtlin/ai-berkshire.git
-
-# skillをClaude Codeグローバルコマンドディレクトリにコピー
-cd ai-berkshire
-./scripts/install-claude-commands.sh
-```
-
-Claude CodeユーザーでWindows PowerShell / コマンドプロンプトの場合：
-
-```bat
+# 1. リポジトリをクローン
 git clone https://github.com/xbtlin/ai-berkshire.git
 cd ai-berkshire
-.\scripts\install-claude-commands.bat
+
+# 2. Antigravity CLI を起動
+agy
 ```
 
-CodexユーザーでmacOS / Linuxの場合：
+Antigravity CLI は `.agents/skills/` と `GEMINI.md` を自動認識し、対話中に必要に応じて各SkillをProgressive Disclosure（段階的開示）で読み込みます。
 
-```bash
-# リポジトリをクローン
-git clone https://github.com/xbtlin/ai-berkshire.git
+### 使い方
 
-# Codex skillsを生成して ~/.codex/skills にインストール
-cd ai-berkshire
-./scripts/install-codex-skills.sh
-
-# オプション：Codexスラッシュプロンプトを ~/.codex/prompts にインストール
-# Claude Codeのような /investment-research エントリーポイントを使いたい場合
-./scripts/install-codex-prompts.sh
-```
-
-CodexユーザーでWindows PowerShell / コマンドプロンプトの場合：
-
-```bat
-git clone https://github.com/xbtlin/ai-berkshire.git
-cd ai-berkshire
-.\scripts\install-codex-skills.bat
-
-REM オプション：Codexスラッシュプロンプトをインストール
-.\scripts\install-codex-prompts.bat
-```
-
-リポジトリは3つのエントリーポイントを維持しています：`skills/*.md` はClaude Codeコマンドのソース；`codex-skills/*/SKILL.md` は `scripts/sync-codex-skills.py` が `skills/*.md` から生成するCodex skillパッケージ；`codex-prompts/*.md` はオプションのCodexスラッシュプロンプト互換レイヤーです。
-
-### 3. 使い方
-
-Claude Codeで直接呼び出す：
-
-```bash
-# 深掘りリサーチ
-/investment-research テンセント
-/investment-team 美団
-/management-deep-dive 王興、美団
-/private-company-research SpaceX
-/deep-company-series 拼多多
-
-# 決算分析
-/earnings-review テンセント 2025Q4
-/earnings-team PDD 2025年次
-
-# 業界スクリーニング
-/industry-research 原子力発電
-/industry-funnel AI算力
-/quality-screen ハンセン指数構成銘柄
-/bottleneck-hunter AIインフラ
-/investment-checklist 茅台、NVIDIA、Apple
-
-# ポートフォリオ管理
-/income-investment Verizon mode=existing role=core-income quantity=100 cost_basis=39.50 tax_residence=France horizon=5y
-/portfolio-review テンセント30%、美団20%、茅台20%、現金30%
-/thesis-tracker 拼多多
-/thesis-drift 拼多多 reports/拼多多-thesis-2025Q4.md reports/拼多多-thesis-2026Q1.md
-/news-pulse テンセント
-
-# 思考ツール
-/dyp-ask 拼多多の本当のモートはどこにあるか？
-/wechat-article 美団
-```
-
-Codexにインストール後、Codexを再起動してskill名で参照します：
+Antigravity CLI 内で自然言語またはSkill名で指示してください：
 
 ```text
-investment-researchを使ってテンセントをリサーチして
-earnings-reviewを使ってPDD2025年次の決算を分析して
-industry-funnelを使ってAI算力をスクリーニングして
-bottleneck-hunterを使ってAIインフラのボトルネックをスキャンして
-thesis-driftを使って拼多多の2つの投資テーゼを比較して
-wechat-articleを使って美団の投資記事を書いて
-```
+# 企業詳細調査
+テンセント分析：investment-research を使ってテンセントの四大师総合分析を実行
+チーム調査：investment-team を使って拼多多（PDD）のマルチエージェント並行調査を開始
+経営陣分析：management-deep-dive で美団（Meituan）の経営陣を分析
+未公開企業：private-company-research で SpaceX を調査
 
-Codexスラッシュプロンプトをインストールした場合、Codexを再起動して`/`メニューから検索します。Codexの公式カスタムプロンプトエントリーポイントは通常 `prompts:<name>` として表示されます：
+# 決算・財務
+一次決算：earnings-review でテンセントの2025Q4決算書を精読
+決算チーム：earnings-team で PDD 2025年報を分析
 
-```text
-/prompts:investment-research テンセント
+# 業界・スクリーニング
+産業チェーン：industry-research で原子力発電産業をスキャン
+業界ファンネル：industry-funnel で AIコンピュート をスクリーニング
+品質スクリーン：quality-screen で銘柄を除外スクリーニング
+ボトルネック：bottleneck-hunter で AIインフラ のボトルネックを特定
+チェックリスト：investment-checklist で 茅台, テンセント, Nvidia を評価
+
+# ポートフォリオ・追跡
+インカム投資：income-investment で Verizon の配当持続性を評価
+ポートフォリオ：portfolio-review で保有ポジションを分析
+論文追跡：thesis-tracker で PDD の投資仮説を追跡
+論文ドリフト：thesis-drift で PDD の新旧2つの投資レポートを比較
+ニュースパルス：news-pulse で株価急変動の原因を分析
 ```
 
 ---

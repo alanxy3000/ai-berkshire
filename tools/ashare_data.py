@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """A股数据工具 — 腾讯行情 + 东方财富搜索/财务，零外部依赖（仅 stdlib）。
 
-为 Claude Code Skills 提供 A 股实时行情、财务数据等数据。
+为 Antigravity Skills 提供 A 股实时行情、财务数据等数据。
 设计原则：独立模块，不影响现有工具；使用 curl 直连绕过系统代理。
 
 用法（由 Skills 自动调用）：

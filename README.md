@@ -8,9 +8,9 @@
 >
 > 用 AI 重新定义投资研究的深度与效率。
 
-**AI Berkshire** 是一套同时兼容 Claude Code 与 Codex 的投资研究 Skill 合集，将巴菲特、芒格、段永平、李录四位价值投资大师的方法论系统化、结构化，通过 AI Agent 实现专业级投资研究。
+**AI Berkshire** 是一套基于 Antigravity CLI 的价值投资研究 Skill 合集，将巴菲特、芒格、段永平、李录四位价值投资大师的方法论系统化、结构化，通过 AI Agent 实现专业级投资研究。
 
-一个人 + Claude Code / Codex = 一个投研团队。
+一个人 + Antigravity CLI = 一个投研团队。
 
 > 📮 **仓库是全量框架，公众号是精选。** 真正值得深研的公司，加上报告之外我自己的判断与取舍，都在微信公众号「**复利炼丹炉**」——[扫码关注 ↓](#精选研究首发于公众号)
 
@@ -60,7 +60,7 @@
 
 ## 为什么不能直接问 AI？
 
-你当然可以直接问 Claude："帮我分析拼多多值不值得买"。你会得到一篇"一方面...另一方面..."的平衡分析，最后以"投资有风险，请自行判断"收尾。
+你当然可以直接问 AI："帮我分析拼多多值不值得买"。你会得到一篇"一方面...另一方面..."的平衡分析，最后以"投资有风险，请自行判断"收尾。
 
 **这种分析看起来对，但没法拿来做决策。**
 
@@ -178,46 +178,46 @@ AI Berkshire 确保：**同样的输入 → 结构一致、深度一致的输出
 
 | Skill | 用途 | 适合场景 |
 |-------|------|---------|
-| [`/investment-research`](skills/investment-research.md) | 四大师综合深度分析 | 对一家上市公司进行全方位投资研究 |
-| [`/investment-team`](skills/investment-team.md) | 多Agent并行投研团队 | 4个Agent并行研究，最快速、最全面 |
-| [`/management-deep-dive`](skills/management-deep-dive.md) | 管理层纵深研究 | "买股票就是买人"——当管理层是核心变量时深挖 |
-| [`/private-company-research`](skills/private-company-research.md) | 未上市公司深度研究 | 研究蚂蚁、SpaceX等信息稀缺的未上市公司 |
-| [`/deep-company-series`](skills/deep-company-series.md) | 8篇长文系列拆一家公司 | 公众号级深度系列，12万字从认知重置到决策闭环 |
+| [`/investment-research`](.agents/skills/investment-research/SKILL.md) | 四大师综合深度分析 | 对一家上市公司进行全方位投资研究 |
+| [`/investment-team`](.agents/skills/investment-team/SKILL.md) | 多Agent并行投研团队 | 4个Agent并行研究，最快速、最全面 |
+| [`/management-deep-dive`](.agents/skills/management-deep-dive/SKILL.md) | 管理层纵深研究 | "买股票就是买人"——当管理层是核心变量时深挖 |
+| [`/private-company-research`](.agents/skills/private-company-research/SKILL.md) | 未上市公司深度研究 | 研究蚂蚁、SpaceX等信息稀缺的未上市公司 |
+| [`/deep-company-series`](.agents/skills/deep-company-series/SKILL.md) | 8篇长文系列拆一家公司 | 公众号级深度系列，12万字从认知重置到决策闭环 |
 
 ### 📊 财报分析类
 
 | Skill | 用途 | 适合场景 |
 |-------|------|---------|
-| [`/earnings-review`](skills/earnings-review.md) | 财报精读（一手资料） | 只读原始财报，不依赖二手研报，像巴菲特一样读年报 |
-| [`/earnings-team`](skills/earnings-team.md) | 财报精读团队 + 公众号发布 | 四大师并行解读财报 → 编辑润色 → 读者评审 → 可发布文章 |
+| [`/earnings-review`](.agents/skills/earnings-review/SKILL.md) | 财报精读（一手资料） | 只读原始财报，不依赖二手研报，像巴菲特一样读年报 |
+| [`/earnings-team`](.agents/skills/earnings-team/SKILL.md) | 财报精读团队 + 公众号发布 | 四大师并行解读财报 → 编辑润色 → 读者评审 → 可发布文章 |
 
 ### 🏭 行业筛选类
 
 | Skill | 用途 | 适合场景 |
 |-------|------|---------|
-| [`/industry-research`](skills/industry-research.md) | 产业链全景扫描 | 研究一个行业的全部投资机会（按产业链环节切片） |
-| [`/industry-funnel`](skills/industry-funnel.md) | 行业漏斗筛选 | 全市场 → 粗筛 ≤10 家 → 终选 3 家深度分析 |
-| [`/quality-screen`](skills/quality-screen.md) | 去劣筛选（7条硬指标） | 快速排除非一流公司，支持个股/行业/指数/主题批量筛 |
-| [`/bottleneck-hunter`](skills/bottleneck-hunter.md) | 供应链瓶颈猎手 | 从超级趋势出发，寻找产业链物理瓶颈和套利机会 |
-| [`/investment-checklist`](skills/investment-checklist.md) | 巴菲特买入前 Checklist | 六关快速筛选，10分钟决定是否值得深入 |
+| [`/industry-research`](.agents/skills/industry-research/SKILL.md) | 产业链全景扫描 | 研究一个行业的全部投资机会（按产业链环节切片） |
+| [`/industry-funnel`](.agents/skills/industry-funnel/SKILL.md) | 行业漏斗筛选 | 全市场 → 粗筛 ≤10 家 → 终选 3 家深度分析 |
+| [`/quality-screen`](.agents/skills/quality-screen/SKILL.md) | 去劣筛选（7条硬指标） | 快速排除非一流公司，支持个股/行业/指数/主题批量筛 |
+| [`/bottleneck-hunter`](.agents/skills/bottleneck-hunter/SKILL.md) | 供应链瓶颈猎手 | 从超级趋势出发，寻找产业链物理瓶颈和套利机会 |
+| [`/investment-checklist`](.agents/skills/investment-checklist/SKILL.md) | 巴菲特买入前 Checklist | 六关快速筛选，10分钟决定是否值得深入 |
 
 ### 📈 持仓管理类
 
 | Skill | 用途 | 适合场景 |
 |-------|------|---------|
-| [`/income-investment`](skills/income-investment.md) | 收益型股票分析 | 区分可持续收益、机会型高息与收益率陷阱 |
-| [`/portfolio-review`](skills/portfolio-review.md) | 组合管理与优化 | 从"研究公司"升级到"管理组合"——仓位、集中度、再平衡 |
-| [`/thesis-tracker`](skills/thesis-tracker.md) | 投资论文追踪 | 买入后的纪律系统：持续跟踪论文是否被证伪 |
-| [`/thesis-drift`](skills/thesis-drift.md) | 投资论文漂移检测 | 对比两份论文/报告，区分事实变化、估值变化与措辞变化 |
-| [`/news-pulse`](skills/news-pulse.md) | 股价异动快速归因 | 股价大涨/大跌时10分钟搞清"发生了什么" |
+| [`/income-investment`](.agents/skills/income-investment/SKILL.md) | 收益型股票分析 | 区分可持续收益、机会型高息与收益率陷阱 |
+| [`/portfolio-review`](.agents/skills/portfolio-review/SKILL.md) | 组合管理与优化 | 从"研究公司"升级到"管理组合"——仓位、集中度、再平衡 |
+| [`/thesis-tracker`](.agents/skills/thesis-tracker/SKILL.md) | 投资论文追踪 | 买入后的纪律系统：持续跟踪论文是否被证伪 |
+| [`/thesis-drift`](.agents/skills/thesis-drift/SKILL.md) | 投资论文漂移检测 | 对比两份论文/报告，区分事实变化、估值变化与措辞变化 |
+| [`/news-pulse`](.agents/skills/news-pulse/SKILL.md) | 股价异动快速归因 | 股价大涨/大跌时10分钟搞清"发生了什么" |
 
 ### 🧠 思维工具类
 
 | Skill | 用途 | 适合场景 |
 |-------|------|---------|
-| [`/dyp-ask`](skills/dyp-ask.md) | 段永平问答 | 以段永平的方式思考任何问题——商业、投资、人生 |
-| [`/financial-data`](skills/financial-data.md) | 财务数据获取与交叉验证规范 | 确保关键数据来自2个独立来源，误差>1%告警 |
-| [`/wechat-article`](skills/wechat-article.md) | 微信公众号文章 | 作者、编辑、读者三Agent协作，产出可发布文章 |
+| [`/dyp-ask`](.agents/skills/dyp-ask/SKILL.md) | 段永平问答 | 以段永平的方式思考任何问题——商业、投资、人生 |
+| [`/financial-data`](.agents/skills/financial-data/SKILL.md) | 财务数据获取与交叉验证规范 | 确保关键数据来自2个独立来源，误差>1%告警 |
+| [`/wechat-article`](.agents/skills/wechat-article/SKILL.md) | 微信公众号文章 | 作者、编辑、读者三Agent协作，产出可发布文章 |
 
 ---
 
@@ -229,149 +229,51 @@ AI Berkshire 确保：**同样的输入 → 结构一致、深度一致的输出
 
 如果是真实投资决策中高风险、高重要性的判断，维护者的观点是：最强模型通常更可能带来更好的分析 ROI，不建议只为节省模型成本而牺牲关键判断质量。轻量模型更适合做初筛、摘要或低风险问题；涉及护城河、估值、管理层和风险交叉判断时，应预期分析质量会更依赖模型能力。
 
-想控制成本时，优先调整 workflow，而不是期待完整深度研究变得便宜：快速排除公司可先用 [`/quality-screen`](skills/quality-screen.md)，股价异动归因可用 [`/news-pulse`](skills/news-pulse.md)。只有当结果值得继续深入时，再运行 [`/investment-research`](skills/investment-research.md) 或 [`/investment-team`](skills/investment-team.md)。
+想控制成本时，优先调整 workflow，而不是期待完整深度研究变得便宜：快速排除公司可先用 [`/quality-screen`](.agents/skills/quality-screen/SKILL.md)，股价异动归因可用 [`/news-pulse`](.agents/skills/news-pulse/SKILL.md)。只有当结果值得继续深入时，再运行 [`/investment-research`](.agents/skills/investment-research/SKILL.md) 或 [`/investment-team`](.agents/skills/investment-team/SKILL.md)。
 
-### 1. 安装 AI 客户端
+### 快速启动 Antigravity CLI
 
-本仓库保留同一套 canonical workflow，并分别提供 Claude Code commands 与 Codex skills。按你使用的客户端安装即可。
-
-Claude Code 用户：
+本项目原生适配 **Google Antigravity CLI (`agy`)**。仓库在 `.agents/skills/` 内置了完整的 21 个投研 Skill 与 `GEMINI.md` 规则，**无需任何全局安装或命令复制**，直接进入项目目录即可运行：
 
 ```bash
-npm install -g @anthropic-ai/claude-code
-```
-
-Codex 用户：
-
-```bash
-# macOS / Linux
-curl -fsSL https://chatgpt.com/codex/install.sh | sh
-
-# 或使用 npm
-npm install -g @openai/codex
-
-# 或使用 Homebrew
-brew install --cask codex
-
-# 验证安装
-codex --version
-```
-
-Windows 用户可使用官方 PowerShell 安装命令：`powershell -ExecutionPolicy ByPass -c "irm https://chatgpt.com/codex/install.ps1 | iex"`。
-
-如果 `codex --version` 能正常输出版本号，就可以继续安装本项目的 Codex skills。
-
-#### 减少授权确认
-
-这些 skills 会频繁调用工具，Claude Code 默认会逐次请求授权确认。这个行为来自 Claude Code 客户端权限机制，不是本仓库可以修改的默认设置。
-
-如果你信任当前 workflow，并且在可信环境中运行，可以用 Claude Code 的跳过权限确认模式启动：
-
-```bash
-claude --dangerously-skip-permissions
-```
-
-注意：该模式会关闭 Claude Code 的工具审批保护，只应在你信任仓库、命令和工作目录的情况下使用。
-
-### 2. 安装 Skills
-
-Claude Code 用户安装（macOS / Linux）：
-
-```bash
-# 克隆仓库
-git clone https://github.com/xbtlin/ai-berkshire.git
-
-# 复制 skills 到 Claude Code 全局 commands 目录
-cd ai-berkshire
-./scripts/install-claude-commands.sh
-```
-
-Claude Code 用户安装（Windows PowerShell / Command Prompt）：
-
-```bat
+# 1. 克隆仓库
 git clone https://github.com/xbtlin/ai-berkshire.git
 cd ai-berkshire
-.\scripts\install-claude-commands.bat
+
+# 2. 启动 Antigravity CLI
+agy
 ```
 
-Codex 用户安装（macOS / Linux）：
+Antigravity CLI 会自动加载项目级配置与 `GEMINI.md` 投资纪律规则，并通过 Progressive Disclosure 在对话中按需激活对应的投研 Skill。
 
-```bash
-# 克隆仓库
-git clone https://github.com/xbtlin/ai-berkshire.git
+### 使用方法
 
-# 生成并安装 Codex skills 到 ~/.codex/skills
-cd ai-berkshire
-./scripts/install-codex-skills.sh
-
-# 可选：安装 Codex slash prompts 到 ~/.codex/prompts
-# 用于获得接近 Claude Code 的 /investment-research 体验
-./scripts/install-codex-prompts.sh
-```
-
-Codex 用户安装（Windows PowerShell / Command Prompt）：
-
-```bat
-git clone https://github.com/xbtlin/ai-berkshire.git
-cd ai-berkshire
-.\scripts\install-codex-skills.bat
-
-REM 可选：安装 Codex slash prompts
-.\scripts\install-codex-prompts.bat
-```
-
-仓库同时维护三套入口：`skills/*.md` 是 Claude Code command 源文件；`codex-skills/*/SKILL.md` 是 Codex skill 包，由 `scripts/sync-codex-skills.py` 从 `skills/*.md` 生成；`codex-prompts/*.md` 是可选的 Codex slash prompt 兼容层。
-
-### 3. 使用
-
-在 Claude Code 中直接调用：
-
-```bash
-# 深度研究
-/investment-research 腾讯
-/investment-team 美团
-/management-deep-dive 王兴 美团
-/private-company-research SpaceX
-/deep-company-series 拼多多
-
-# 财报分析
-/earnings-review 腾讯 2025Q4
-/earnings-team PDD 2025年报
-
-# 行业筛选
-/industry-research 核电
-/industry-funnel AI算力
-/quality-screen 恒生指数成分股
-/bottleneck-hunter AI基础设施
-/investment-checklist 茅台, 英伟达, 苹果
-
-# 持仓管理
-/income-investment Verizon mode=existing role=core-income quantity=100 cost_basis=39.50 tax_residence=France horizon=5y
-/portfolio-review 腾讯30%, 美团20%, 茅台20%, 现金30%
-/thesis-tracker 拼多多
-/thesis-drift 拼多多 reports/拼多多-thesis-2025Q4.md reports/拼多多-thesis-2026Q1.md
-/news-pulse 腾讯
-
-# 思维工具
-/dyp-ask 拼多多的护城河到底在哪里？
-/wechat-article 美团
-```
-
-在 Codex 中安装后重启 Codex，然后直接按 skill 名称描述任务，例如：
+在 Antigravity CLI 中，你可以通过自然语言或 Skill 名称发起投研任务：
 
 ```text
-使用 investment-research 研究腾讯
-使用 earnings-review 分析 PDD 2025年报
-使用 industry-funnel 筛选 AI算力
-使用 bottleneck-hunter 扫描 AI基础设施瓶颈
-使用 thesis-drift 对比拼多多两份投资论文
-使用 wechat-article 写美团投研文章
-```
+# 深度公司研究
+分析腾讯：请使用 investment-research 对腾讯控股进行四大师综合分析
+团队协作：使用 investment-team 启动多Agent并行团队深度研究拼多多
+管理层分析：使用 management-deep-dive 分析美团王兴与核心团队
+未上市公司：使用 private-company-research 深度分析 SpaceX
 
-如果安装了 Codex slash prompts，重启 Codex 后也可以在 `/` 菜单里搜索这些 prompt。Codex 官方的 custom prompt 入口通常显示为 `prompts:<name>`，例如：
+# 财报精读
+一手财报：使用 earnings-review 深度解读腾讯 2025Q4 原始财报
+财报团队：使用 earnings-team 解读 PDD 2025年报并生成公众号初稿
 
-```text
-/prompts:investment-research 腾讯
+# 行业与筛选
+产业链扫描：使用 industry-research 扫描核电产业链
+行业漏斗：使用 industry-funnel 筛选 AI算力 核心标的
+快速去劣：使用 quality-screen 筛选恒生科技成分股
+瓶颈套利：使用 bottleneck-hunter 扫描 AI基础设施 供应链瓶颈
+买入Checklist：使用 investment-checklist 评估 茅台, 腾讯, 英伟达
+
+# 持仓与追踪
+收益型配置：使用 income-investment 分析 Verizon 的股息可持续性
+组合管理：使用 portfolio-review 评估当前持仓配比与风险暴露
+论文追踪：使用 thesis-tracker 跟踪拼多多核心投资逻辑
+论文漂移检测：使用 thesis-drift 对比拼多多前后两期投资论文
+异动脉搏：使用 news-pulse 对腾讯今日股价异动进行归因
 ```
 
 ---

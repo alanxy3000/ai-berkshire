@@ -2,7 +2,6 @@
 .DS_Store
 __pycache__/
 *.pyc
-.codex/
 /tmp/
 logs/command-log.jsonl
 reports/美团/command-log.jsonl

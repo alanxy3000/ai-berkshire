@@ -8,9 +8,9 @@ English | [中文](README.md) | [日本語](README_JA.md)
 >
 > Redefining the depth and efficiency of investment research with AI.
 
-**AI Berkshire** is a collection of investment research skills compatible with both Claude Code and Codex. It systematizes the methodologies of four value investing masters — Buffett, Munger, Duan Yongping, and Li Lu — and delivers professional-grade research through AI Agents.
+**AI Berkshire** is a collection of value investment research skills built for Antigravity CLI. It systematizes the methodologies of four value investing masters — Buffett, Munger, Duan Yongping, and Li Lu — and delivers professional-grade research through AI Agents.
 
-One person + Claude Code / Codex = an entire investment research team.
+One person + Antigravity CLI = an entire investment research team.
 
 [Track Record](#real-track-record) · [Why Not Just Ask AI?](#why-cant-you-just-ask-ai-directly) · [Skills](#skills-overview-20-skills) · [Quick Start](#quick-start) · [Reports](#live-research-reports) · [Design Philosophy](#design-philosophy)
 
@@ -50,7 +50,7 @@ One person + Claude Code / Codex = an entire investment research team.
 
 ## Why Can't You Just Ask AI Directly?
 
-You can, of course, ask Claude: "Should I buy Pinduoduo?" You'll get a balanced "on one hand... on the other hand..." analysis that ends with "investing involves risks, please make your own judgment."
+You can, of course, ask AI: "Should I buy Pinduoduo?" You'll get a balanced "on one hand... on the other hand..." analysis that ends with "investing involves risks, please make your own judgment."
 
 **That kind of analysis looks right but can't drive actual decisions.**
 
@@ -168,46 +168,46 @@ Ask AI directly, and you have one context window. Four parallel Agents means 4×
 
 | Skill | Purpose | When to Use |
 |-------|---------|-------------|
-| [`/investment-research`](skills/investment-research.md) | Four-master comprehensive analysis | Full-spectrum research on a public company |
-| [`/investment-team`](skills/investment-team.md) | Multi-Agent parallel research team | 4 Agents in parallel — fastest and most comprehensive |
-| [`/management-deep-dive`](skills/management-deep-dive.md) | Management deep dive | "Buying a stock is buying its people" — when management is the key variable |
-| [`/private-company-research`](skills/private-company-research.md) | Private company research | Research info-scarce private companies like Ant Group, SpaceX |
-| [`/deep-company-series`](skills/deep-company-series.md) | 8-part long-form deep dive series | Publication-grade series, ~120K words from cognitive reset to decision closure |
+| [`/investment-research`](.agents/skills/investment-research/SKILL.md) | Four-master comprehensive analysis | Full-spectrum research on a public company |
+| [`/investment-team`](.agents/skills/investment-team/SKILL.md) | Multi-Agent parallel research team | 4 Agents in parallel — fastest and most comprehensive |
+| [`/management-deep-dive`](.agents/skills/management-deep-dive/SKILL.md) | Management deep dive | "Buying a stock is buying its people" — when management is the key variable |
+| [`/private-company-research`](.agents/skills/private-company-research/SKILL.md) | Private company research | Research info-scarce private companies like Ant Group, SpaceX |
+| [`/deep-company-series`](.agents/skills/deep-company-series/SKILL.md) | 8-part long-form deep dive series | Publication-grade series, ~120K words from cognitive reset to decision closure |
 
 ### 📊 Earnings Analysis
 
 | Skill | Purpose | When to Use |
 |-------|---------|-------------|
-| [`/earnings-review`](skills/earnings-review.md) | Earnings deep read (primary sources) | Read raw filings only — no sell-side reports — like Buffett reads annual reports |
-| [`/earnings-team`](skills/earnings-team.md) | Earnings team + publishable article | Four masters interpret earnings in parallel → editor polish → reader review → publish-ready |
+| [`/earnings-review`](.agents/skills/earnings-review/SKILL.md) | Earnings deep read (primary sources) | Read raw filings only — no sell-side reports — like Buffett reads annual reports |
+| [`/earnings-team`](.agents/skills/earnings-team/SKILL.md) | Earnings team + publishable article | Four masters interpret earnings in parallel → editor polish → reader review → publish-ready |
 
 ### 🏭 Industry Screening
 
 | Skill | Purpose | When to Use |
 |-------|---------|-------------|
-| [`/industry-research`](skills/industry-research.md) | Industry value chain scan | Map all investment opportunities across an industry's value chain |
-| [`/industry-funnel`](skills/industry-funnel.md) | Industry funnel screening | Full market → rough cut ≤10 → final pick 3, with deep analysis |
-| [`/quality-screen`](skills/quality-screen.md) | Quality screen (7 hard metrics) | Quickly eliminate non-first-class companies; supports single stock / industry / index / thematic batch screening |
-| [`/bottleneck-hunter`](skills/bottleneck-hunter.md) | Supply-chain bottleneck hunter | Start from a supertrend and find physical supply-chain bottlenecks and arbitrage opportunities |
-| [`/investment-checklist`](skills/investment-checklist.md) | Buffett pre-buy checklist | Six gates, 10-minute decision on whether to dig deeper |
+| [`/industry-research`](.agents/skills/industry-research/SKILL.md) | Industry value chain scan | Map all investment opportunities across an industry's value chain |
+| [`/industry-funnel`](.agents/skills/industry-funnel/SKILL.md) | Industry funnel screening | Full market → rough cut ≤10 → final pick 3, with deep analysis |
+| [`/quality-screen`](.agents/skills/quality-screen/SKILL.md) | Quality screen (7 hard metrics) | Quickly eliminate non-first-class companies; supports single stock / industry / index / thematic batch screening |
+| [`/bottleneck-hunter`](.agents/skills/bottleneck-hunter/SKILL.md) | Supply-chain bottleneck hunter | Start from a supertrend and find physical supply-chain bottlenecks and arbitrage opportunities |
+| [`/investment-checklist`](.agents/skills/investment-checklist/SKILL.md) | Buffett pre-buy checklist | Six gates, 10-minute decision on whether to dig deeper |
 
 ### 📈 Portfolio Management
 
 | Skill | Purpose | When to Use |
 |-------|---------|-------------|
-| [`/income-investment`](skills/income-investment.md) | Income-centered equity analysis | Distinguish durable income, opportunistic yield, and yield traps |
-| [`/portfolio-review`](skills/portfolio-review.md) | Portfolio review & optimization | Graduate from "researching companies" to "managing a portfolio" — sizing, concentration, rebalancing |
-| [`/thesis-tracker`](skills/thesis-tracker.md) | Investment thesis tracker | Post-buy discipline system: continuously track whether your thesis has been falsified |
-| [`/thesis-drift`](skills/thesis-drift.md) | Investment thesis drift detection | Compare two theses/reports — separate factual, valuation, and wording changes |
-| [`/news-pulse`](skills/news-pulse.md) | Price-move rapid attribution | When a stock surges or drops — figure out "what happened" in 10 minutes |
+| [`/income-investment`](.agents/skills/income-investment/SKILL.md) | Income-centered equity analysis | Distinguish durable income, opportunistic yield, and yield traps |
+| [`/portfolio-review`](.agents/skills/portfolio-review/SKILL.md) | Portfolio review & optimization | Graduate from "researching companies" to "managing a portfolio" — sizing, concentration, rebalancing |
+| [`/thesis-tracker`](.agents/skills/thesis-tracker/SKILL.md) | Investment thesis tracker | Post-buy discipline system: continuously track whether your thesis has been falsified |
+| [`/thesis-drift`](.agents/skills/thesis-drift/SKILL.md) | Investment thesis drift detection | Compare two theses/reports — separate factual, valuation, and wording changes |
+| [`/news-pulse`](.agents/skills/news-pulse/SKILL.md) | Price-move rapid attribution | When a stock surges or drops — figure out "what happened" in 10 minutes |
 
 ### 🧠 Thinking Tools
 
 | Skill | Purpose | When to Use |
 |-------|---------|-------------|
-| [`/dyp-ask`](skills/dyp-ask.md) | Duan Yongping Q&A | Think through any question the Duan Yongping way — business, investing, life |
-| [`/financial-data`](skills/financial-data.md) | Financial data retrieval & cross-validation | Ensure key data comes from 2+ independent sources; alerts on >1% deviation |
-| [`/wechat-article`](skills/wechat-article.md) | WeChat article workflow | Author, editor, and reader Agents collaborate to produce a publishable article |
+| [`/dyp-ask`](.agents/skills/dyp-ask/SKILL.md) | Duan Yongping Q&A | Think through any question the Duan Yongping way — business, investing, life |
+| [`/financial-data`](.agents/skills/financial-data/SKILL.md) | Financial data retrieval & cross-validation | Ensure key data comes from 2+ independent sources; alerts on >1% deviation |
+| [`/wechat-article`](.agents/skills/wechat-article/SKILL.md) | WeChat article workflow | Author, editor, and reader Agents collaborate to produce a publishable article |
 
 ---
 
@@ -219,149 +219,51 @@ Deep-research skills run multiple research passes, cross-source checks, and mult
 
 For high-stakes investment decisions, the maintainer's view is that the strongest model usually offers the best analysis ROI; saving model cost should not come at the expense of important judgment quality. Lighter models can be useful for triage, summarization, or low-risk questions, but moat, valuation, management, and risk synthesis should be expected to depend more heavily on model capability.
 
-To control cost, adjust the workflow before expecting a full deep-research run to become cheap: use [`/quality-screen`](skills/quality-screen.md) first to rule out weaker companies, or [`/news-pulse`](skills/news-pulse.md) for quick price-move attribution. Run [`/investment-research`](skills/investment-research.md) or [`/investment-team`](skills/investment-team.md) only when the result is worth deeper work.
+To control cost, adjust the workflow before expecting a full deep-research run to become cheap: use [`/quality-screen`](.agents/skills/quality-screen/SKILL.md) first to rule out weaker companies, or [`/news-pulse`](.agents/skills/news-pulse/SKILL.md) for quick price-move attribution. Run [`/investment-research`](.agents/skills/investment-research/SKILL.md) or [`/investment-team`](.agents/skills/investment-team/SKILL.md) only when the result is worth deeper work.
 
-### 1. Install an AI Client
+### Quick Start with Antigravity CLI
 
-This repository keeps one canonical workflow and provides Claude Code commands plus Codex skills. Install the client you plan to use.
-
-For Claude Code users:
+This project is natively configured for **Google Antigravity CLI (`agy`)**. All 21 investment research skills are located in `.agents/skills/` with workspace rules defined in `GEMINI.md`. **No global installation or command copying required**:
 
 ```bash
-npm install -g @anthropic-ai/claude-code
-```
-
-For Codex users on macOS / Linux:
-
-```bash
-# macOS / Linux
-curl -fsSL https://chatgpt.com/codex/install.sh | sh
-
-# Or use npm
-npm install -g @openai/codex
-
-# Or use Homebrew
-brew install --cask codex
-
-# Verify installation
-codex --version
-```
-
-Windows users can use the official PowerShell installer: `powershell -ExecutionPolicy ByPass -c "irm https://chatgpt.com/codex/install.ps1 | iex"`.
-
-If `codex --version` prints a version, you can continue with this project's Codex skills installation.
-
-#### Reducing Approval Prompts
-
-These skills issue many tool calls, and Claude Code asks for approval for each one by default. That behavior comes from Claude Code's client-side permission system; it is not a repository default this project can change.
-
-If you trust the current workflow and are running in a trusted environment, start Claude Code in skip-permissions mode:
-
-```bash
-claude --dangerously-skip-permissions
-```
-
-Warning: this disables Claude Code's tool-approval guardrails. Use it only when you trust the repository, commands, and working directory.
-
-### 2. Install Skills
-
-For Claude Code users on macOS / Linux:
-
-```bash
-# Clone the repository
-git clone https://github.com/xbtlin/ai-berkshire.git
-
-# Copy skills to Claude Code global commands directory
-cd ai-berkshire
-./scripts/install-claude-commands.sh
-```
-
-For Claude Code users on Windows PowerShell / Command Prompt:
-
-```bat
+# 1. Clone repository
 git clone https://github.com/xbtlin/ai-berkshire.git
 cd ai-berkshire
-.\scripts\install-claude-commands.bat
+
+# 2. Launch Antigravity CLI
+agy
 ```
 
-For Codex users on macOS / Linux:
+Antigravity CLI automatically loads `.agents/skills/` and `GEMINI.md`, activating skills on demand via progressive disclosure.
 
-```bash
-# Clone the repository
-git clone https://github.com/xbtlin/ai-berkshire.git
+### Usage
 
-# Generate and install Codex skills to ~/.codex/skills
-cd ai-berkshire
-./scripts/install-codex-skills.sh
-
-# Optional: install Codex slash prompts to ~/.codex/prompts
-# for a Claude Code-like /investment-research entry point
-./scripts/install-codex-prompts.sh
-```
-
-For Codex users on Windows PowerShell / Command Prompt:
-
-```bat
-git clone https://github.com/xbtlin/ai-berkshire.git
-cd ai-berkshire
-.\scripts\install-codex-skills.bat
-
-REM Optional: install Codex slash prompts
-.\scripts\install-codex-prompts.bat
-```
-
-The repository maintains three entry points: `skills/*.md` are the Claude Code command sources; `codex-skills/*/SKILL.md` are Codex skill packages generated from `skills/*.md` by `scripts/sync-codex-skills.py`; `codex-prompts/*.md` are an optional Codex slash-prompt compatibility layer.
-
-### 3. Use
-
-Invoke directly in Claude Code:
-
-```bash
-# Deep Research
-/investment-research Tencent
-/investment-team Meituan
-/management-deep-dive Wang Xing, Meituan
-/private-company-research SpaceX
-/deep-company-series Pinduoduo
-
-# Earnings Analysis
-/earnings-review Tencent 2025Q4
-/earnings-team PDD 2025 Annual
-
-# Industry Screening
-/industry-research Nuclear Power
-/industry-funnel AI Compute
-/quality-screen Hang Seng Index Constituents
-/bottleneck-hunter AI Infrastructure
-/investment-checklist Moutai, NVIDIA, Apple
-
-# Portfolio Management
-/income-investment Verizon mode=existing role=core-income quantity=100 cost_basis=39.50 tax_residence=France horizon=5y
-/portfolio-review Tencent 30%, Meituan 20%, Moutai 20%, Cash 30%
-/thesis-tracker Pinduoduo
-/thesis-drift Pinduoduo reports/PDD-thesis-2025Q4.md reports/PDD-thesis-2026Q1.md
-/news-pulse Tencent
-
-# Thinking Tools
-/dyp-ask Where is Pinduoduo's real moat?
-/wechat-article Meituan
-```
-
-After installing for Codex, restart Codex and refer to skills by name, for example:
+Within Antigravity CLI, invoke skills naturally or by name:
 
 ```text
-Use investment-research to research Tencent
-Use earnings-review to analyze PDD 2025 annual results
-Use industry-funnel to screen AI compute
-Use bottleneck-hunter to scan AI infrastructure bottlenecks
-Use thesis-drift to compare two Pinduoduo theses
-Use wechat-article to write a Meituan investment article
-```
+# Deep Company Research
+Analyze Tencent: Use investment-research to perform four-master analysis on Tencent
+Team Research: Use investment-team to spawn multi-agent parallel research on PDD
+Management: Use management-deep-dive to assess Meituan management
+Private Company: Use private-company-research on SpaceX
 
-If you install Codex slash prompts, restart Codex and search for them in the `/` menu. Codex's official custom prompt entry point usually appears as `prompts:<name>`, for example:
+# Financials & Earnings
+Primary Filings: Use earnings-review on Tencent 2025Q4
+Earnings Team: Use earnings-team on PDD 2025 Annual Report
 
-```text
-/prompts:investment-research Tencent
+# Industry & Screening
+Industry Scan: Use industry-research for Nuclear Energy
+Funnel: Use industry-funnel to screen AI Compute
+Quality Screen: Use quality-screen on Hang Seng Tech Index
+Bottleneck: Use bottleneck-hunter on AI Infrastructure bottlenecks
+Checklist: Use investment-checklist for Moutai, Tencent, Nvidia
+
+# Portfolio & Tracking
+Income: Use income-investment on Verizon
+Portfolio Review: Use portfolio-review on current holdings
+Thesis Tracker: Use thesis-tracker on PDD
+Thesis Drift: Use thesis-drift to compare two thesis versions
+News Pulse: Use news-pulse to attribute recent price movement
 ```
 
 ---

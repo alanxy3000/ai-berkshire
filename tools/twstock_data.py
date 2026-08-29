@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """台股数据工具 — FinMind 开放数据 API，零外部依赖（仅 stdlib）。
 
-为 Claude Code Skills 提供台股行情、估值、财务、月营收等数据。
+为 Antigravity Skills 提供台股行情、估值、财务、月营收等数据。
 设计原则：独立模块，不影响现有工具；与 ashare_data.py 同风格。
 
 数据源：FinMind (api.finmindtrade.com)，覆盖上市(twse)/上柜(tpex)全部股票。

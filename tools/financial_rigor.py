@@ -2,7 +2,7 @@
 """Financial Rigor Toolkit for AI Berkshire.
 
 Command-line tool for verifying financial data accuracy during investment research.
-Automatically called by Claude Code Skills at critical validation checkpoints.
+Automatically called by Antigravity Skills at critical validation checkpoints.
 
 Zero external dependencies — uses only Python stdlib (decimal, json, math, argparse).
 Requires Python >= 3.7.
